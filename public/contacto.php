@@ -27,6 +27,11 @@ unset($_SESSION['errores'], $_SESSION['viejo']);
     <label for="email">Correo electrónico</label>
     <input type="email" id="email" name="email" maxlength="150"
            value="<?= e($viejo['email'] ?? '') ?>" required>
+
+    <!-- Reto 1: Campo Asunto -->
+    <label for="asunto">Asunto</label>
+    <input type="text" id="asunto" name="asunto" maxlength="150"
+           value="<?= e($viejo['asunto'] ?? '') ?>" required>
  
     <label for="mensaje">Mensaje</label>
     <textarea id="mensaje" name="mensaje" rows="5"
